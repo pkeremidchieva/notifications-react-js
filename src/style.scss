@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400');
+
+.App {
+  max-width: 800px;
+  margin: auto;
+  font-family: 'Roboto Condensed', sans-serif;
+  padding: 30px;
+}
+.form-group {
+  font-size: 18px;
+  textarea, select {
+    display: block;
+    width: 100%;
+    margin: 20px 0px 50px 0px;
+    &:focus {
+      outline: none;
+    }
+  }
+  select {
+    -webkit-appearance: menulist-button;
+     height: 30px;
+  }
+  textarea {
+    min-height: 200px;
+    height: 30px;
+  }
+}
+.notification-wrapper {
+  position: fixed;
+  z-index: 3;
+  width: 400px;
+  padding: 30px;
+  &.top {
+    top: 10px;
+  }
+  &.bottom {
+    bottom: 10px;
+  }
+  &.left {
+    left: 10px;
+  }
+  &.right {
+    right: 10px;
+  }
+  &.alert {
+    background: #d9534f;
+  }
+  &.info {
+    background: #5cb85c;
+  }
+  &.warning {
+    background: #ffd500;
+  }
+}
+.alert-shown {
+  opacity: 1;
+  transition: all 250ms linear;
+}
+.alert-hidden {
+  opacity: 0;
+  transition: all 250ms linear;
+}
+.btn.btn-primary {
+  text-transform: uppercase;
+  background: #000;
+  color: #fff;
+  padding: 20px;
+}
